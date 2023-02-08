@@ -84,6 +84,6 @@ Cycle_length = st.number_input("Enter Cycle length (days) : ")
 AMH = st.number_input("Enter AMH (ng/mL) : ")
 yes = rfc.predict([[Follicle_No_R,Skin_darkening,hair_growth,Follicle_No_L,Weight_gain,Cycle,Fast_food,Pimples,Cycle_length,AMH]])
 if yes[0] == 1:
-    st.write("Hai")
+    st.write("Yes")
 else:
-    st.write("Nahi hai")
+    st.write("No")
